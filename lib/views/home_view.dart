@@ -13,39 +13,51 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       backgroundColor: AppColors.primaryColor,
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          CircleAvatar(
-            radius: 112,
-            backgroundColor: Colors.white,
-            child: CircleAvatar(
-              radius: 110,
-              backgroundImage: AssetImage(Assets.imagesLogo),
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: 120,
             ),
-          ),
-          Text(
-            'Tharwat Samy',
-            style: AppStyles.styleRegular32,
-          ),
-          Text(
-            'FLUTTER DEVELOPER',
-            style: AppStyles.styleBold16,
-          ),
-          Divider(
-            color: Color(0xff69849B),
-            thickness: 1,
-            endIndent: 60,
-            indent: 60,
-          ),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-            child: CustomTextField(
-              hintText: '(+20) 01097787537',
-              icon: Icons.phone,
+            CircleAvatar(
+              radius: 112,
+              backgroundColor: Colors.white,
+              child: CircleAvatar(
+                radius: 110,
+                backgroundImage: AssetImage(Assets.imagesLogo),
+              ),
             ),
-          )
-        ],
+            Text(
+              'Tharwat Samy',
+              style: AppStyles.styleRegular32,
+            ),
+            Text(
+              'FLUTTER DEVELOPER',
+              style: AppStyles.styleBold16,
+            ),
+            Divider(
+              color: Color(0xff69849B),
+              thickness: 1,
+              endIndent: 60,
+              indent: 60,
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+              child: CustomTextField(
+                hintText: '(+20) 01097787537',
+                icon: Icons.phone,
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+              child: CustomTextField(
+                hintText: 'Mahmoud475@gmail.com',
+                icon: Icons.mail,
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
