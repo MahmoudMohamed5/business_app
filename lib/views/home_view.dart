@@ -1,6 +1,7 @@
 import 'package:business_app/utils/app_images.dart';
 import 'package:business_app/utils/app_styles.dart';
 import 'package:business_app/utils/app_colors.dart';
+import 'package:business_app/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
@@ -37,6 +38,13 @@ class HomeView extends StatelessWidget {
             endIndent: 60,
             indent: 60,
           ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+            child: CustomTextField(
+              hintText: '(+20) 01097787537',
+              icon: Icons.phone,
+            ),
+          )
         ],
       ),
     );
