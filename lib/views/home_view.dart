@@ -10,7 +10,7 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: AppColors.backgroundColor,
+      backgroundColor: AppColors.primary,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
