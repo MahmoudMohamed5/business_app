@@ -1,5 +1,6 @@
 import 'package:business_app/utils/app_images.dart';
-import 'package:business_app/utils/constant.dart';
+import 'package:business_app/utils/app_styles.dart';
+import 'package:business_app/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
@@ -10,7 +11,7 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: AppColors.primary,
+      backgroundColor: AppColors.primaryColor,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -21,6 +22,20 @@ class HomeView extends StatelessWidget {
               radius: 110,
               backgroundImage: AssetImage(Assets.imagesLogo),
             ),
+          ),
+          Text(
+            'Tharwat Samy',
+            style: AppStyles.styleRegular32,
+          ),
+          Text(
+            'FLUTTER DEVELOPER',
+            style: AppStyles.styleBold16,
+          ),
+          Divider(
+            color: Color(0xff69849B),
+            thickness: 1,
+            endIndent: 60,
+            indent: 60,
           ),
         ],
       ),
